@@ -1,0 +1,231 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cream-bg: rgb(235, 221, 197);
+    --bckgrd-blue: rgb(46, 67, 101);
+    --white: #ffff;
+    --marigold: rgb(229, 157, 44);
+    --brown: rgb(138, 59, 8);
+    --grey: rgb(52, 52, 52);
+    --black: rgb(0, 0, 0,);
+    --buff: rgb(243, 213, 141);
+    
+}
+
+body {
+    background-color: var(--cream-bg);
+    color: var(--grey);
+}
+
+/* Header */
+header {
+    background-color: var(--bckgrd-blue); 
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--marigold);
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.btn-order {
+    background: var(--brown);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--bckgrd-blue);
+    padding: 50px 10%;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    min-height: 500px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    max-width: 400px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.hero-buttons button {
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.btn-primary { background: var(--marigold); color: var(--grey); }
+.btn-secondary { background: var(--brown); color: var(--white); }
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    filter: drop-shadow(0 20px 30px var(--black));
+}
+
+/* Stats Bar */
+.stats-bar {
+    background: var(--white);
+    margin: -30px 10% 30px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--black);
+}
+
+.stat-item span {
+    display: block;
+    font-weight: 800;
+    color: var(--bckgrd-blue);
+}
+
+.btn-promo {
+    background: var(--bckgrd-blue);
+    color: var(--white);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+/* Product Detail */
+.prdct-detail {
+    padding: 50px 10%;
+}
+
+.prdct-grid {
+    display: flex;
+    gap: 30px;
+}
+
+.image-box {
+    flex: 1;
+    background: var(--bckgrd-blue);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.detail-card {
+    flex: 1;
+    background: var(--buff);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.detail-options {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.detail-options li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--black);
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.harga { font-size: 24px; font-weight: 800; }
+
+.btn-beli {
+    background: var(--marigold);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Footer Menu */
+.footer-menu {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background: var(--buff);
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.img-circle {
+    width: 80px;
+    height: 80px;
+    background: var(--white);
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    overflow: hidden;
+}
+
+.img-circle img { width: 100%; }
+
+.btn-sm {
+    background: var(--marigold);
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
