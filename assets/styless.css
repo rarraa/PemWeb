@@ -1,4 +1,3 @@
-/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +22,6 @@ body {
     color: var(--grey);
 }
 
-/* Header */
 header {
     background-color: var(--bckgrd-blue); 
     padding: 20px 10%;
@@ -55,7 +53,6 @@ nav a {
     cursor: pointer;
 }
 
-/* Hero Section */
 .hero {
     background-color: var(--bckgrd-blue);
     padding: 50px 10%;
@@ -104,7 +101,6 @@ nav a {
     filter: drop-shadow(0 20px 30px var(--black));
 }
 
-/* Stats Bar */
 .stats-bar {
     background: var(--white);
     margin: -30px 10% 30px;
@@ -130,7 +126,6 @@ nav a {
     border-radius: 8px;
 }
 
-/* Product Detail */
 .prdct-detail {
     padding: 50px 10%;
 }
@@ -190,7 +185,6 @@ nav a {
     font-weight: bold;
 }
 
-/* Footer Menu */
 .footer-menu {
     padding: 50px 10%;
     text-align: center;

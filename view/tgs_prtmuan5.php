@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOON - Makanan Modern</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Assets/styless.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="mkn_utama.jpg" alt="Makanan Utama">
+            <img src="../Assets/mkn_utama.jpg" alt="Makanan Utama">
         </div>
     </section>
 
@@ -44,7 +44,7 @@
     <section class="prdct-detail">
         <div class="prdct-grid">
             <div class="img-box">
-                <img src="mkn_spesial.jpg" alt="Hidangan Spesial", weight="400px", height="400px">
+                <img src="../Assets/mkn_spesial.jpg" alt="Hidangan Spesial", weight="400px", height="400px">
             </div>
             <div class="detail-card">
                 <h3>PESAN PAKET<br>HEMAT SEKARANG</h3>
@@ -66,35 +66,35 @@
         <div class="card-container">
             <div class="card">
                 <div class="img-circle">
-                    <img src="mie_grg.jpg" alt="food 1">
+                    <img src="../Assets/mie_grg.jpg" alt="food 1">
                 </div>
                 <h4>Mie Goreng</h4>
                 <button class="btn-sm">Pilih</button>
             </div>
             <div class="card">
                 <div class="img-circle">
-                    <img src="aym_bkr.jpg" alt="food 2">
+                    <img src="../Assets/aym_bkr.jpg" alt="food 2">
                 </div>
                 <h4>Ayam Bakar</h4>
                 <button class="btn-sm">Pilih</button>
             </div>
             <div class="card">
                 <div class="img-circle">
-                    <img src="rc_bowl.jpg" alt="food 3">
+                    <img src="../Assets/rc_bowl.jpg" alt="food 3">
                 </div>
                 <h4>Rice Bowl</h4>
                 <button class="btn-sm">Pilih</button>
             </div>
             <div class="card">
                 <div class="img-circle">
-                    <img src="aym_katsu.jpg" alt="food 2">
+                    <img src="../Assets/aym_katsu.jpg" alt="food 2">
                 </div>
                 <h4>Ayam Katsu</h4>
                 <button class="btn-sm">Pilih</button>
             </div>
             <div class="card">
                 <div class="img-circle">
-                    <img src="dumpling.jpg" alt="food 3">
+                    <img src="../Assets/dumpling.jpg" alt="food 3">
                 </div>
                 <h4>Dumpling</h4>
                 <button class="btn-sm">Pilih</button>
