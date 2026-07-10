@@ -1,21 +1,25 @@
-<!DOCTYPE html>
-<html lang="id">
+<?php 
+session_start();  
+// Proteksi halaman Admin 
+if (!isset($_SESSION['role']) || $_SESSION['role']  !== 'admin') {      
+    echo  "<script>alert('Akses  Ditolak!  Anda  bukan  Admin.'); window.location='login.php';</script>";     
+    exit; 
+} 
+?>  
+<!DOCTYPE html> 
+<html> 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modul Praktikum CSS</title>
-    <!-- Menghubungkan ke file CSS eksternal -->
-    <link rel="stylesheet" href="../assets/styles.css">
-    <?php include '../assets/headerlte.php'; ?>
-</head>
-<body <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <title>Dashboard Admin</title>
+    <?php include '../../assets/headerlte.php'; ?>
+</head> 
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
     <!--begin::App Wrapper-->
     <div class="app-wrapper">
       <!--begin::Header-->
-      <?php include '../assets/navbarlte.php'; ?>
+      <?php include '../../assets/navbarlte.php'; ?>
       <!--end::Header-->
       <!--begin::Sidebar-->
-      <?php include '../assets/sidebarlte.php'; ?>
+      <?php include '../../assets/sidebarlte.php'; ?>
       <!--end::Sidebar-->
       <!--begin::App Main-->
       <main class="app-main">
@@ -26,7 +30,7 @@
             <!--begin::Row-->
             <div class="row ">
               <div class="col-sm-6">
-                <h3 class="mb-0">Pertemuan 5</h3>
+                <h3 class="mb-0">Dashboard</h3>
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
@@ -49,33 +53,11 @@
               <!--begin::Col-->
               <div class="col-lg-3 col-6">
                   <div class="inner">
-                    <header>
-        <h1>Selamat Datang di Web Praktikum CSS</h1>
-    </header>
-
-    <main id="content">
-        <section>
-            <h2>Tentang CSS</h2>
-            <p>CSS adalah bahasa untuk mendesain tampilan web.</p>
-        </section>
-
-        <section>
-            <h2>Keuntungan Menggunakan CSS</h2>
-            <ul>
-                <li>Memudahkan pengelolaan desain halaman web.</li>
-                <li>Memisahkan struktur dan desain.</li>
-            </ul>
-        </section>
-
-        <div class="container">
-            <div class="item" id="box1">Kolom 1 (Flexbox)</div>
-            <div class="item" id="box2">Kolom 2 (Flexbox)</div>
-        </div>
-    </main>
-
-    <footer id="footer">
-        <p>&copy; 2026 Web Praktikum CSS</p>
-    </footer>
+                    <h1>Selamat  Datang  di  Ruang  Admin,  
+        <?php  echo $_SESSION['username']; ?>!</h1>     
+    <p>Ini adalah halaman rahasia khusus yang hanya bisa diakses oleh akun bertipe Admin.</p>     
+    <br>     
+    <a href="logout.php">Keluar / Logout</a>
                   </div>
               </div>
             </div>
@@ -99,6 +81,6 @@
     <!--end::App Wrapper-->
     <!--begin::Script-->
     <!--begin::Third Party Plugin(OverlayScrollbars)-->
-    <?php include '../assets/scriptlte.php'; ?>
-</body>
-</html>
+    <?php include '../../assets/scriptlte.php'; ?>       
+</body> 
+</html> 

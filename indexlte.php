@@ -48,7 +48,7 @@
             <!--begin::Row-->
             <div class="row">
               <!--begin::Col-->
-              <div class="col-lg-3 col-6">
+              <div class="col-lg-3 col-6"> <!-- akhir -->
                 <!--begin::Small Box Widget 1-->
                 <div class="small-box text-bg-primary">
                   <div class="inner">
